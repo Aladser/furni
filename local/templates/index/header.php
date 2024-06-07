@@ -1,6 +1,6 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-IncludeTemplateLangFile(__FILE__);
+<?	
+	if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+	IncludeTemplateLangFile(__FILE__);
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +16,7 @@ IncludeTemplateLangFile(__FILE__);
 </head>
 <body>
 	<div class="wrap">
+		<!--АДМИНКА-->
 		<div id="panel"><?$APPLICATION->ShowPanel();?></div>
 		<div class="hd_header_area">
 			<div class="hd_header">
