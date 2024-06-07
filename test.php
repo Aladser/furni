@@ -1,4 +1,4 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Тест");
-?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?>111<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
