@@ -1864,3 +1864,12 @@ color: #0073A3;
 }
 
 /*================================================== pagination =========================================*/
+
+/*===============MY================*/
+.main-menu__item-text {padding: 0px 41.6667px;}
+.main-menu__item-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0.5rem;
+	height: 20%;
+}
