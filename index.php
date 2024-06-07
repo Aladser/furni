@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебельная компания");
+$APPLICATION->SetTitle("Мебком");
 ?><?$APPLICATION->IncludeComponent("bitrix:menu", "main_menu", Array(
 	"COMPONENT_TEMPLATE" => "horizontal_multilevel",
 		"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
