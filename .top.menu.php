@@ -4,7 +4,7 @@ $aMenuLinks = Array(
 		"", 
 		"/", 
 		Array(), 
-		Array(), 
+		Array("IMAGE"=>"favicon.png"), 
 		"" 
 	),
 	Array(

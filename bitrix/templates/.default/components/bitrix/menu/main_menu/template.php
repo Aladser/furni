@@ -5,6 +5,12 @@
 
 <style>
 	.main-menu__item-text {padding: 0px 41.6667px;}
+	.main-menu__item-image {
+		background-image: url("favicon.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0.3rem;
+	}
 </style>
 
 <div class="nv_topnav"><ul>
@@ -28,7 +34,7 @@
 			<?if ($arItem["DEPTH_LEVEL"] == 1):?>
 				<!-- элементы верхнего меню без вложенного меню -->
 				<li>
-					<a href="<?=$arItem["LINK"]?>"> 
+					<a href="<?=$arItem["LINK"]?>" <?if(isset($arItem['PARAMS']['IMAGE'])):?> class='main-menu__item-image' <?endif?> > 
 						<span class="main-menu__item-text"> <?=$arItem["TEXT"]?> </span>
 					</a>
 				</li>
