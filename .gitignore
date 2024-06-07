@@ -1,2 +1,4 @@
 /access.log
 /error.log
+/bitrix/cache
+/bitrix/managed_cache
