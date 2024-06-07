@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/bitrix/components/bitrix/menu/templates/store_v3_swipe/style.css" => "17177392651965",]; ?>
