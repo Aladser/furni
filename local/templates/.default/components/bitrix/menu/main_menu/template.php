@@ -1,6 +1,6 @@
 <?
 	if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
-	$APPLICATION->SetAdditionalCSS($this->GetFolder()."/template_style.css");
+	$APPLICATION->SetAdditionalCSS('/local/template_style.css');
 ?>
 
 <div class="nv_topnav"><ul>
@@ -41,4 +41,3 @@
 	<div class="clearboth"></div>
 
 </ul></div>
-

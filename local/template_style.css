@@ -1870,6 +1870,6 @@ color: #0073A3;
 .main-menu__item-image {
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 0.5rem;
-	height: 20%;
+	margin: 0 0.5rem 0.5rem 0.5rem;
+	height: 15%;
 }
