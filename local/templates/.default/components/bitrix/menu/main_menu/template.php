@@ -5,8 +5,8 @@
 
 <div class="nv_topnav"><ul>
 	
-	<? $previousLevel = 0; ?>
-	<?foreach($arResult as $arItem):?>
+	<? $previousLevel = 0;
+		foreach($arResult as $arItem):?>
 		<!-- закрытие тегов вложенного меню -->
 		<?if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel):?>
 			<?=str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"]));?>
