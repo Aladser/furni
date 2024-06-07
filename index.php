@@ -1,7 +1,7 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебком");
-?><?$APPLICATION->IncludeComponent("bitrix:menu", "main_menu", Array(
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+  $APPLICATION->SetTitle("Мебком");?>
+
+<?$APPLICATION->IncludeComponent("bitrix:menu", "main_menu", Array(
 	"COMPONENT_TEMPLATE" => "horizontal_multilevel",
 		"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
 		"MENU_CACHE_TYPE" => "N",	// Тип кеширования
@@ -17,7 +17,5 @@ $APPLICATION->SetTitle("Мебком");
 	),
 	false
 );?>
-<p>
-</p>
-<p>
-</p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
