@@ -1,6 +1,6 @@
 <?
 $arTemplate = array (
-  'NAME' => 'Внутренние',
+  'NAME' => 'Внутренние страницы',
   'DESCRIPTION' => '',
   'SORT' => '',
   'TYPE' => '',
