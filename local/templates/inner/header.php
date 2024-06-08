@@ -9,10 +9,11 @@
 	<meta charset="utf-8">
 	<?$APPLICATION->ShowHead();?>
 	<title><?$APPLICATION->ShowTitle()?></title>
-	<script type="text/javascript" src="js/jquery-1.8.2.min.js" defer></script>
-	<script type="text/javascript" src="js/slides.min.jquery.js" defer></script>
-	<script type="text/javascript" src="js/jquery.carouFredSel-6.1.0-packed.js" defer></script>
-	<script type="text/javascript" src="js/functions.js" defer></script>
+	<?$template_folder='/local/templates/inner'?>
+	<script type="text/javascript" src="<?=$template_folder?>/js/jquery-1.8.2.min.js" defer></script>
+	<script type="text/javascript" src="<?=$template_folder?>/js/slides.min.jquery.js" defer></script>
+	<script type="text/javascript" src="<?=$template_folder?>/js/jquery.carouFredSel-6.1.0-packed.js" defer></script>
+	<script type="text/javascript" src="<?=$template_folder?>/js/functions.js" defer></script>
 
 </head>
 <body>
