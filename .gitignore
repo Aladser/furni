@@ -2,3 +2,4 @@
 /error.log
 /bitrix/cache
 /bitrix/managed_cache
+/bitrix/site_checker*
