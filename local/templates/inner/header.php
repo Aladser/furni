@@ -9,12 +9,12 @@
 	<meta charset="utf-8">
 	<?$APPLICATION->ShowHead();?>
 	<title><?$APPLICATION->ShowTitle()?></title>
-	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery-1.8.2.min.js" defer></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/slides.min.jquery.js" defer></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery.carouFredSel-6.1.0-packed.js" defer></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/functions.js" defer></script>
 </head>
+
 <body>
 	<!--АДМИНКА-->
 	<div id="panel"><?$APPLICATION->ShowPanel();?></div>
@@ -41,8 +41,17 @@
 					</tr>
 					<tr>
 						<td style="padding-top: 11px;">
-							<a href="" class="hd_singin">Войти на сайт</a><br>
-							<a href="" class="hd_signup">Зарегистрироватся</a>
+							<?$APPLICATION->IncludeComponent(
+									"bitrix:system.auth.form",
+									"auth_component",
+									Array(
+										"COMPONENT_TEMPLATE" => "auth_component",
+										"FORGOT_PASSWORD_URL" => "/user/",
+										"PROFILE_URL" => "/user/profile.php",
+										"REGISTER_URL" => "/user/register.php",
+										"SHOW_ERRORS" => "N"
+									)
+							);?>
 						</td>
 					</tr>
 				</tbody></table>

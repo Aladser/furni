@@ -9,10 +9,10 @@
 	<meta charset="utf-8">
 	<?$APPLICATION->ShowHead();?>
 	<title><?$APPLICATION->ShowTitle()?></title>
-	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/functions.js"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -40,25 +40,17 @@
 					</tr>
 					<tr>
 						<td style="padding-top: 11px;">
-							<span class="hd_singin"><a id="hd_singin_but_open" href="">Войти на сайт</a>
-							<div class="hd_loginform">
-								<span class="hd_title_loginform">Войти на сайт</span>
-								<form name="" method="" action="">
-					
-									<input placeholder="Логин" type="text">
-									<input placeholder="Пароль" type="password">			
-									<a href="/" class="hd_forgotpassword">Забыли пароль</a>
-									
-									<div class="head_remember_me" style="margin-top: 10px">
-										<input id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y" type="checkbox">
-										<label for="USER_REMEMBER_frm" title="Запомнить меня на этом компьютере">Запомнить меня</label>
-									</div>				
-									<input value="Войти" name="Login" style="margin-top: 20px;" type="submit">
-									</form>
-								<span class="hd_close_loginform">Закрыть</span>
-							</div>
-							</span><br>
-							<a href="" class="hd_signup">Зарегистрироваться</a>
+							<?$APPLICATION->IncludeComponent(
+								"bitrix:system.auth.form",
+								"auth_component",
+								Array(
+									"COMPONENT_TEMPLATE" => "auth_component",
+									"FORGOT_PASSWORD_URL" => "/user/",
+									"PROFILE_URL" => "/user/profile.php",
+									"REGISTER_URL" => "/user/register.php",
+									"SHOW_ERRORS" => "N"
+								)
+							);?>
 						</td>
 					</tr>
 				</tbody></table>
