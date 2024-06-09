@@ -1,13 +1,6 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-CJSCore::Init();
-
-$logout_link = $APPLICATION->GetCurPageParam("logout=yes&".bitrix_sessid_get(), array(
-	"login",
-	"logout",
-	"register",
-	"forgot_password",
-	"change_password")
-);
+<?
+	if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+	CJSCore::Init();
 ?>
 
 <div class="bx-system-auth-form">
@@ -49,7 +42,7 @@ else:
 		<?=$arResult["USER_NAME"]?>
 		<a href="<?=$arResult["PROFILE_URL"]?>">[<?=$arResult["USER_LOGIN"]?>]</a> 
 	</span><br>
-	<a href="<?=$logout_link?>" class="hd_signup">Выйти</a>										
+	<a href="<?=$arResult['LOGOUT_LINK']?>" class="hd_signup">Выйти</a>										
 
 <?endif?>
 </div>
