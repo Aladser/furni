@@ -1,5 +1,6 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-CJSCore::Init();
+<?
+	if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+	CJSCore::Init();
 ?>
 
 <div class="bx-system-auth-form">
