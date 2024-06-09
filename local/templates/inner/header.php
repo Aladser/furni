@@ -41,8 +41,17 @@
 					</tr>
 					<tr>
 						<td style="padding-top: 11px;">
-							<a href="" class="hd_singin">Войти на сайт</a><br>
-							<a href="" class="hd_signup">Зарегистрироватся</a>
+							<?$APPLICATION->IncludeComponent(
+									"bitrix:system.auth.form",
+									"auth_component",
+									Array(
+										"COMPONENT_TEMPLATE" => "auth_component",
+										"FORGOT_PASSWORD_URL" => "/user/",
+										"PROFILE_URL" => "/user/profile.php",
+										"REGISTER_URL" => "/user/register.php",
+										"SHOW_ERRORS" => "N"
+									)
+							);?>
 						</td>
 					</tr>
 				</tbody></table>
