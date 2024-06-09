@@ -5,4 +5,4 @@
         echo '</pre>';
     }
 
-    define('TEMPLATE_FOLDER', '/local/templates/.default');
+    define('DEFAULT_TEMPLATE_FOLDER', '/local/templates/.default');

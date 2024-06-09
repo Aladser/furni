@@ -9,10 +9,10 @@
 	<meta charset="utf-8">
 	<?$APPLICATION->ShowHead();?>
 	<title><?$APPLICATION->ShowTitle()?></title>
-	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/functions.js"></script>
 </head>
 <body>
 	<div class="wrap">

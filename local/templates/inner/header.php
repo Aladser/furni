@@ -1,7 +1,6 @@
 <?	
 	if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 	IncludeTemplateLangFile(__FILE__);
-	define('TEMPLATE_FOLDER', '/local/templates/inner');
 ?>
 
 <!DOCTYPE html>
@@ -10,12 +9,12 @@
 	<meta charset="utf-8">
 	<?$APPLICATION->ShowHead();?>
 	<title><?$APPLICATION->ShowTitle()?></title>
-	<script type="text/javascript" src="<?=TEMPLATE_FOLDER?>/js/jquery-1.8.2.min.js" defer></script>
-	<script type="text/javascript" src="<?=TEMPLATE_FOLDER?>/js/slides.min.jquery.js" defer></script>
-	<script type="text/javascript" src="<?=TEMPLATE_FOLDER?>/js/jquery.carouFredSel-6.1.0-packed.js" defer></script>
-	<script type="text/javascript" src="<?=TEMPLATE_FOLDER?>/js/functions.js" defer></script>
-
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery-1.8.2.min.js" defer></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/slides.min.jquery.js" defer></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/jquery.carouFredSel-6.1.0-packed.js" defer></script>
+	<script type="text/javascript" src="<?=DEFAULT_TEMPLATE_FOLDER?>/js/functions.js" defer></script>
 </head>
+
 <body>
 	<!--АДМИНКА-->
 	<div id="panel"><?$APPLICATION->ShowPanel();?></div>
